@@ -69,8 +69,8 @@ int login(int num) {
         if(u_passwd[i] == '\n' || u_passwd[i] == '\r')
           u_passwd[i] = '\0';
     }
-   if(strcmp(PASSWD, u_passwd) == 0) return(1);  
-   else return(0);  
+   if(strcmp(PASSWD, u_passwd) == 0) return 1;  
+   else return 0;  
 }
 
 int main(int argc, char *argv[]) {
@@ -123,7 +123,7 @@ int main(int argc, char *argv[]) {
     }
     close(mostra);
    }
- return(0);
+ return 0;
 }
 
 
