@@ -94,7 +94,7 @@ exemplo teste bellman-ford
 #define FALSE 0
 #define BUF 100
 
-int grafo[BUF][BUF][2],d[BUF],pi[BUF]
+int grafo[BUF][BUF][2],d[BUF],pi[BUF];
 int nn,en;
 
 void ISS(int s);
