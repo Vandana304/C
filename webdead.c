@@ -81,7 +81,7 @@ int main (int argc, char *argv[])
    count++;
   } else {
    count=0;
-   while(count!=THREAD) 
+   while((count==THREAD)?0:1) 
    {
     if(pthread_join (thread[count], NULL))
      DEBUG("problema no pthread_join");
